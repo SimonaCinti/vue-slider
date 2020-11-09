@@ -27,6 +27,10 @@
             if (this.indexPhoto < 0){
                 this.indexPhoto = this.photos.length - 1
             }
+        },
+
+        clickPhoto(index) { //nda il valore di questo index si trova all'interno dell'html ed è stato inizializzato nel v-for=(photo, index)
+            this.indexPhoto = index;
         }
     }
 
