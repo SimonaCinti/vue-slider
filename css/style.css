@@ -7,7 +7,6 @@ box-sizing: border-box;
 body {
     font-family: 'Ubuntu', sans-serif;
     cursor: default;
-    background-color: darksalmon; /*debug*/
 }
 
 /*  Typography */
@@ -15,4 +14,64 @@ body {
 h1 {
     text-align: center;
     margin: 50px 0;
+}
+
+/* Main */
+
+.container {
+    height: 600px;
+    position: relative;
+}
+
+.container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+
+/* Arrow  */
+
+.next,
+.prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    transition: background .4s;
+}
+
+.next {
+    right: 10px;
+}
+.prev {
+    left: 10px;
+}
+
+.next:hover,
+.prev:hover {
+    background: black;
+}
+
+.nav-circle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    width: 140px;
+    height: 30px;
+    background-color: #b1adada5;
+}
+
+.nav-circle i {
+    cursor: pointer;
 }
