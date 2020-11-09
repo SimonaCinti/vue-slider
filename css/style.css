@@ -18,18 +18,22 @@ h1 {
 
 /* Main */
 
-.container {
+#app {
+    height: 800px; /*!debug per check loop*/
+}
+
+.slider{
     position: relative;
 }
 
-.container .gallery-image {
-    height: 600px;
+.slider .gallery-image {
+    height: 500px;
 }
 
-.container img {
+.slider .gallery-image img {
     height: 100%;
     width: 100%;
-    object-fit: cover
+    object-fit: cover /*!permette funzionalità simile se la impostassi come bg */
 }
 
 /* Arrow  direction */

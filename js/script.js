@@ -43,7 +43,7 @@
         startLoop(){
             this.loopId = setInterval(() =>{
                 this.nextPhoto();
-            }, 3000); //debug 1000
+            }, 6000); //debug 1000
         },
         stopLoop(){
             clearInterval(this.loopId);
