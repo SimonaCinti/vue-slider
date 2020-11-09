@@ -40,7 +40,9 @@
 
             <div class="nav-circle">
                 <i v-for="(photo, index) in photos"
-                :class="['fas fa-circle', index === indexPhoto ?'active' :'null']" @click="clickPhoto(index)"></i>
+                :class="['fas fa-circle', index === indexPhoto ?'active' :'null']" 
+                @click="clickPhoto(index)">
+                </i>
             </div>
         </div>
         
