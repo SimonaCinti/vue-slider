@@ -24,7 +24,7 @@
     </header>
 
     <main>
-        <div id="app" class="container">
+        <div id="app" class="container" @mouseover="stopLoop"@mouseout="startLoop">
 
             <div @click="prevPhoto" class="prev">
                 <i class="fas fa-arrow-left"></i>
