@@ -39,10 +39,10 @@
             </div>
 
             <div class="nav-circle">
-                <i class="fas fa-circle active"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
+                <i v-for="(photo, index) in photos"
+                :class="['fas fa-circle', index === indexPhoto ?'active' :'null']"></i>
+
+            <!-- <i class="fas fa-circle active"></i>-->
             </div>
         </div>
         
