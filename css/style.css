@@ -5,7 +5,14 @@ box-sizing: border-box;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     cursor: default;
     background-color: darksalmon; /*debug*/
+}
+
+/*  Typography */
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
 }
